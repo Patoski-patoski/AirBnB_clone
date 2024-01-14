@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Vlass State """"
+""" Class State """"
 
 from models.base_model import BaseModel
 
