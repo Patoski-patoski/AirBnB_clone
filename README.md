@@ -2,7 +2,7 @@
 <h3>AirBnB clone - The console</h3>
 <h3>A command interpreter to manipulate data without a visual interface</h3>
 <h5>Python OOP</h4>
-  <img src="image/hbnb.png" width="1000" height="350"/>
+  <img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240115T003407Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=88062e5375618737fa6ab82386d30b638270a0fbb489e219f0d7ef87de6b058b" width="1000" height="350"/>
 </div>
 
 ### **Welcome to the AirBnB clone project!**
