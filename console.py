@@ -5,6 +5,7 @@
 import cmd
 from models.base_model import BaseModel
 from models import storage
+from models.engine.file_storage import my_objects
 
 
 class HBNBCommand(cmd.Cmd):
@@ -33,8 +34,8 @@ class HBNBCommand(cmd.Cmd):
             return
 
         try:
-            if arg == "BaseModel":
-                new_instance = BaseModel()
+            if arg in my_objects.keys():
+                new_instance = my_objects[arg]()
             else:
                 print("** class doesn't exist **")
                 return
@@ -51,7 +52,7 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 0:
             print("** class name missing **")
             return
-        elif args[0] != "BaseModel":
+        elif args[0] not in my_objects.keys():
             print("** class doesn't exist **")
             return
         elif len(args) == 1:
@@ -70,7 +71,7 @@ class HBNBCommand(cmd.Cmd):
         args = arg.split()
         if len(args) == 0:
             print("** class name missing **")
-        elif args[0] != "BaseModel":
+        elif args[0] not in my_objects.keys():
             print("** class doesn't exist **")
         elif len(args) == 1:
             print("** instance id missing **")
@@ -86,7 +87,7 @@ class HBNBCommand(cmd.Cmd):
         """Prints all string representations of all instances based or not on
         the class name."""
         args = arg.split()
-        if len(args) > 0 and args[0] != "BaseModel":
+        if len(args) > 0 and args[0] not in my_objects.keys():
             print("** class doesn't exist **")
         else:
             all_objs = storage.all()
@@ -100,7 +101,7 @@ class HBNBCommand(cmd.Cmd):
         args = arg.split()
         if len(args) == 0:
             print("** class name missing **")
-        elif args[0] != "BaseModel":
+        elif args[0] not in my_objects.keys():
             print("** class doesn't exist **")
         elif len(args) == 1:
             print("** instance id missing **")
