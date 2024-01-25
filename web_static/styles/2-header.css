@@ -1,8 +1,7 @@
-/** This is the header CSS */
+/** This is the 2nd header CSS */
 
 header {
+	background-color: #FF0000;
 	height: 70px;
 	width: 100%;
-	border-bottom:1px solid #CCCCCC;
-	background-color: #fff;
 }

@@ -1,0 +1,9 @@
+/* This is the global CSS */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #484848;
+	font-family: Circular,"Helvetica Neue",Arial, Helvetica, sans-serif;
+}
