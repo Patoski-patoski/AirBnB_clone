@@ -28,17 +28,19 @@ div.container section.filters button:hover {
 
 /* Location and amenities */
 
-div.container section.filters div.locations {
-	border-right: 1px solid #DDD;
+div.container section.filters div.locations,
+div.container section.filters div.amenities {
+	position: absolute;
 	height: 100%;
 	width: 15%;
-	position: absolute;
+}
+
+div.container section.filters div.locations {
+	border-right: 1px solid #DDD;
 	left: 10px;
 }
 
 div.container section.filters div.amenities {
-	position: absolute;
-	height: 100%;
 	width: 15%;
 	left: 185px;
 }

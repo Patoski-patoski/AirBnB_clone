@@ -1,0 +1,94 @@
+/* This is the filters for CSS */
+
+
+div.container section.filters {
+	background-color: #fff;
+	height: 70px;
+	width: 100%;
+	border: 4px solid #DDD;
+	position: relative;
+}
+
+div.container section.filters button {
+	font-size: 18px;
+	background-color: #ff5a5f;
+	color: #fff;
+	height: 48px;
+	width: 20%;
+	border: none;
+	border-radius: 4px;
+	position: absolute;
+	right: 30px;
+	top: 10px;
+
+}
+div.container section.filters button:hover {
+	opacity: 90%;
+}
+
+/* Location and amenities */
+
+div.container section.filters div.locations,
+div.container section.filters div.amenities {
+	position: absolute;
+	height: 100%;
+    width: 15%;
+}
+
+div.container section.filters div.locations {
+    position: absolute;
+	border-right: 1px solid #DDD;
+	left: 20px;
+}
+
+div.container section.filters div.amenities {
+	left: 185px;
+}
+
+div.container section.filters div.locations h4,
+div.container section.filters div.amenities h4  {
+	font-weight: 400;
+	font-size: 14px;
+	margin-top: -10px;
+}
+
+/* Dropdown Location */
+
+div.container section.filters div.locations ul.popover,
+div.container section.filters div.amenities ul.popover {
+    position: absolute;
+    margin-top: -7px;
+	border: 1px solid #DDD;
+	background-color: #FAFAFA;
+    display: none;
+	border-radius: 4px;
+	right: 1px;
+	font-size: 16px;
+}
+
+div.container section.filters div.locations:hover ul.popover,
+div.container section.filters div.amenities:hover ul.popover {
+    display:inline-block;
+	transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 1;
+}
+
+div.container section.filters div.locations ul.popover ul,
+div.container section.filters div.amenities ul.popover ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	line-height: 1.5;
+	position: relative;
+	padding-right: 12px;
+}
+
+div.container section.filters div.amenities ul.popover{
+	border: 1px solid #DDD;
+	right: 20px;
+} 
+
+div.container section.filters div.amenities ul.popover ul{
+	padding: 12px;
+	margin: 1rem;
+}
