@@ -1,0 +1,103 @@
+/* The 8th-places article */
+
+div.container section.places  h1{
+    font-size: 30px; 
+}
+
+div.container section.places div {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; 
+    gap: 12px;
+}
+
+div.container section.places article {
+    max-width: 390px;
+    position: relative; 
+    left: 25%;
+    border: #ff5a5f 1px solid;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+div.container section.places article div.price_by_night {
+    color: #ff5a5f;
+    border: #ff5a5f solid;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    position: absolute;
+    top: 25px; 
+    right: 10px;
+    min-width: 60px; 
+    text-align: center;
+}
+
+div.container section.places article div.price_by_night p {
+    position: absolute;
+    bottom: -15px;
+    right: 1px;
+}
+
+div.container section.places article div.information {
+    height: 80px;
+    border-top: 1px #DDD solid;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+div.container section.places article div.information div.max_guest, div.number_rooms, div.number_bathrooms {
+    width: 100px; 
+}
+
+div.container section.places article div.information div.max_guest,
+div.container section.places article div.information div.number_rooms,
+div.container section.places article div.information div.number_bathrooms {
+    width: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2px;
+}
+
+div.container section.places article div.information div.max_guest {
+    background: url(../images/icon_group.png) center no-repeat;
+}
+
+div.container section.places article div.information div.number_rooms {
+    background: url(../images/icon_bed.png) center no-repeat;
+}
+
+div.container section.places article div.information div.number_bathrooms {
+    background: url(../images/icon_bath.png) center no-repeat;
+}
+
+div.container section.places article div.description {
+    display: flex;
+    text-align: left;
+    padding: 2px 4px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+div.container section.places article div.user {
+    font-weight: bold;
+    display: flex; 
+}
+
+div.container section.places article h2 {
+    border-left-width: 2px;
+    border-right-width: 2px; 
+    display: grid;
+    text-align: center;
+    border-radius: 4px;
+    margin: 20px;
+    text-align: center; 
+    padding: 20px;
+}
+div.container section.places article.item3{
+    position: relative;
+    display: grid;
+    left: 100%;
+}

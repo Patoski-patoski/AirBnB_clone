@@ -1,5 +1,9 @@
 /* This is the filters for CSS */
 
+div.container{
+	display: grid;
+	grid-template-columns: 2fr; 
+}
 
 div.container section.filters {
 	background-color: #fff;
@@ -86,7 +90,7 @@ div.container section.filters div.amenities ul.popover ul {
 div.container section.filters div.amenities ul.popover{
 	border: 1px solid #DDD;
 	right: 20px;
-} 
+}
 
 div.container section.filters div.amenities ul.popover ul{
 	padding: 12px;
