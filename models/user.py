@@ -1,11 +1,15 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+"""
+Module (user): This file defines the UserModel sub class
+it inherits from BaseModel
 
-"""User module"""
+"""
+
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """a class User that inherits from BaseModel
+    """User models sub class inheriting from the main class BaseModel
 
     Args:
         email: string - empty string
