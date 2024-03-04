@@ -15,7 +15,7 @@ my_objects = {
         "User": User,
         "Place": Place,
         "State": State,
-        "City"; City,
+        "City": City,
         "Amenity": Amenity,
         "Review": Review,
 }
