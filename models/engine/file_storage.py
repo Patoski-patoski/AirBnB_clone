@@ -41,3 +41,5 @@ class FileStorage:
                 for obj_id, value in attr_dict.items():
                     obj = obj_id.split('.')[0]
                     FileStorage.__objects[obj_id] = my_objects[obj](**value)
+        else:
+            pass
